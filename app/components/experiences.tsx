@@ -32,7 +32,7 @@ function Experiences({ experiences }: ExperiencesProps) {
             aria-label="View Full Résumé (opens in a new tab)"
           >
             <span>
-              View Full
+              View Full{" "}
               <span className="inline-block">
                 Résumé
                 <svg

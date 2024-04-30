@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import { lazy, useEffect } from "react";
 import Header from "./components/header";
 import About from "./components/about";
@@ -8,46 +8,46 @@ const Footer = lazy(() => import("./components/footer"));
 import { experiences } from "@/app/data/experiences";
 import { projects } from "@/app/data/projects";
 export default function Home() {
-  // useEffect(() => {
-  //   const navLinks = document.querySelectorAll("nav ul li a");
+  useEffect(() => {
+    const navLinks = document.querySelectorAll("nav ul li a");
 
-  //   // Function to highlight the active link
-  //   function highlightNavLink() {
-  //     // Get current scroll position
-  //     const scrollPosition = window.scrollY;
+    // Function to highlight the active link
+    function highlightNavLink() {
+      // Get current scroll position
+      const scrollPosition = window.scrollY;
 
-  //     // Loop through each section
-  //     document.querySelectorAll("section").forEach((section) => {
-  //       const sectionTop = section.offsetTop;
-  //       const sectionHeight = section.clientHeight;
+      // Loop through each section
+      document.querySelectorAll("section").forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
 
-  //       // Check if the current scroll position is within this section
-  //       if (
-  //         scrollPosition >= sectionTop &&
-  //         scrollPosition < sectionTop + sectionHeight
-  //       ) {
-  //         // Remove 'active' class from all links
-  //         navLinks.forEach((link) => {
-  //           link.classList.remove("active");
-  //         });
+        // Check if the current scroll position is within this section
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          // Remove 'active' class from all links
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
 
-  //         // Add 'active' class to the corresponding link
-  //         const correspondingLink = document.querySelector(
-  //           `nav ul li a[href="#${section.id}"]`
-  //         );
-  //         if (correspondingLink) {
-  //           correspondingLink.classList.add("active");
-  //         }
-  //       }
-  //     });
-  //   }
+          // Add 'active' class to the corresponding link
+          const correspondingLink = document.querySelector(
+            `nav ul li a[href="#${section.id}"]`
+          );
+          if (correspondingLink) {
+            correspondingLink.classList.add("active");
+          }
+        }
+      });
+    }
 
-  //   // Attach scroll event listener
-  //   window.addEventListener("scroll", highlightNavLink);
-  //   return () => {
-  //     window.removeEventListener("scroll", highlightNavLink);
-  //   };
-  // }, []);
+    // Attach scroll event listener
+    window.addEventListener("scroll", highlightNavLink);
+    return () => {
+      window.removeEventListener("scroll", highlightNavLink);
+    };
+  }, []);
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <a

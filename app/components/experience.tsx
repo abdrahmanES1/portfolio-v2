@@ -31,7 +31,7 @@ export default function Experience({
               >
                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                 <span>
-                  {position} ·
+                  {position}  {" · "}
                   <span className="inline-block">
                     {place}
                     <svg
@@ -52,7 +52,17 @@ export default function Experience({
               </a>
             </div>
           </h3>
-          <p className="mt-2 text-sm leading-normal">{description}</p>
+          <div className="mt-2 text-sm leading-normal">
+            {typeof description == "string" ? (
+              description
+            ) : (
+              <ul className="list-disc">
+                {description?.map((line: string, index: number) => (
+                  <li key={index}>{line}</li>
+                ))}
+              </ul>
+            )}
+          </div>
           <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             {technologies.map((tech) => (
               <li key={tech} className="mr-1.5 mt-2">

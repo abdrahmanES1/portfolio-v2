@@ -43,8 +43,18 @@ function Project({
               </span>
             </a>
           </h3>
-          <p className="mt-2 text-sm leading-normal">{description}</p>
-          <ul className="mt-2 flex " aria-label="Technologies used">
+          <div className="mt-2 text-sm leading-normal">{" "}
+            {typeof description == "string" ? (
+              description
+            ) : (
+              <ul className="">
+                {description?.map((line: string, index: number) => (
+                  <li key={index}>{line}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
             {technologies.map((tech) => (
               <li key={tech} className="mr-1.5 mt-2">
                 <div className="flex items-center rounded-full  bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">

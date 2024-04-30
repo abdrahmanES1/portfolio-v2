@@ -12,10 +12,12 @@ function Header() {
           </a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Frontend Engineer
+          Full-Stack Devloper
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          I build pixel-perfect, engaging, and accessible digital experiences.
+          Proven ability to develop and deploy full-stack applications using a
+          variety of technologies.
+          <br /> Expertise in API integration and cloud computing.{" "}
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
