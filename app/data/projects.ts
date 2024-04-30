@@ -1,26 +1,52 @@
 export const projects: Project[] = [
   {
-    title: "E-commerce Website",
-    description:
-      "A modern e-commerce platform for selling various products online.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    imageUrl: "https://images.unsplash.com/photo-1714032857191-deda5932bcc1?w=800&h=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+    title: "EsteQuiz : University Exam Platform",
+    description: [
+      "Developed a comprehensive exam platform .",
+      "Designed with a user-friendly interface for seamless student experience.",
+      "Empowered teachers with advanced administrative capabilities for efficient exam management.",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Zustand",
+      "Git",
+      "Chakraui",
+      "Jwt",
+    ],
+    imageUrl:
+      "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469615/Portfolio-v2/EsteQuiz_q1xh17.webp",
 
-    url: "https://images.unsplash.com/photo-1714032857191-deda5932bcc1?w=800&h=48&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+    url: "https://quiz-este.vercel.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Express API Initializer : npm package",
     description:
-      "A personal portfolio showcasing projects, skills, and experience.",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-    imageUrl: "https://images.unsplash.com/photo-1714032857191-deda5932bcc1?w=800&h=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
-    url: "https://images.unsplash.com/photo-1714032857191-deda5932bcc1?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "Tool designed to streamline the process of generating Express.js applications",
+    technologies: ["Commander", "Typescript", "Node.js"],
+    imageUrl:
+      "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714471095/npm-icon_bb8deu.webp",
+    url: "https://www.npmjs.com/package/express-api-initializer",
   },
   {
-    title: "Task Management App",
-    description: "An application for managing tasks and to-dos efficiently.",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-    imageUrl: "https://images.unsplash.com/photo-1714032857191-deda5932bcc1?w=800&h=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
-    url: "https://images.unsplash.com/photo-1714032857191-deda5932bcc1?w=800&h=48&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8",
+    title: "E Student Rent",
+    description: [
+      "This web site helps you to find the right rent offer that meets your budget",
+      "List your property in a few minutes and reach thousands of students every day.",
+      "Get the best offers for students depending on your city or your university",
+      "Perhaps you're looking for somewhere close to your university or whatever you're looking for, we'll help you find it technologies",
+    ],
+    technologies: [
+      "React.js",
+      "Next.js",
+      "tailwind.css",
+      "Node.js",
+      "Express.js",
+    ],
+    imageUrl:
+      "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469320/Portfolio-v2/e-student-rent_alzywp.webp",
+    url: "https://e-student-rent.vercel.app/",
   },
 ];
