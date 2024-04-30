@@ -5,7 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 200, 20, 22;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,3 +31,16 @@ body {
     text-wrap: balance;
   }
 }
+.active .nav-indicator {
+  @apply w-16 bg-slate-200;
+}
+
+.active .nav-text{
+@apply text-slate-200;
+}
+
+cursor{
+  @apply bg-sky-800;
+}
+
+
