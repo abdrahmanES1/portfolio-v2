@@ -13,18 +13,24 @@ function About() {
         </h2>
       </div>
       <div>
-        <p className="mb-4">
-          Full-Stack Software Developer with a passion for creating elegant,
-          user-friendly products. <br />
-          Seeking a challenging role in a fast-paced environment where I can use
-          my skills and experience to make a real difference. let`s connect, you
-          can reach out to me any time at : <br />
-          <span className="font-bold">
-            Skills/Knowledge possessed as follows:
-          </span>
-          <br />
+        <p className="mb-4 text-justify">
+          I am Abderrahman Essebyity, a Full-Stack Software Developer with a
+          passion for creating elegant, user-friendly products. With a solid
+          background in developing and deploying full-stack applications, I
+          excel in API integration and cloud computing. I have extensive
+          experience with technologies such as React, Next.js, Node.js,
+          Express.js, and Django, enabling me to build robust and scalable web
+          applications. Seeking a challenging role in a fast-paced environment
+          where I can leverage my skills and experience to make a real
+          difference. Let`s connect—you can reach out to me anytime at
+          <a
+          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+          href="mailto:abderrahman.essebyity@gmail.com"
+        >
+          {" "}abderrahman.essebyity@gmail.com
+        </a>
         </p>
-        <ul className="list-disc">
+        {/* <ul className="list-disc">
           <li>XHTML/HTML/HTML5, Templating Engine (Jade/Pug, etc.)</li>
           <li>
             CSS/CSS3 (incl. Grid, Flexbox), Bootstrap 3+, Tailwind CSS,
@@ -44,12 +50,7 @@ function About() {
           </li>
         </ul>
         Email:{" "}
-        <a
-          className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-          href="mailto:abderrahman.essebyity@gmail.com"
-        >
-          abderrahman.essebyity@gmail.com
-        </a>
+         */}
       </div>
     </section>
   );
