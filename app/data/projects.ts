@@ -1,5 +1,16 @@
 export const projects: Project[] = [
   {
+    title: "Magic UI Magic UI, open source contribution",
+    description: [
+      "Integrated new components, enhancing the functionality and usability of the Magic UI library.",
+      "Developed and maintained a linting system to ensure code quality and consistency across the project.",
+      "Authored comprehensive installation documentation, improving the onboarding process for new users and developers.",
+    ],
+    technologies: ["React", "Next.js", "Schadcn", "Tailwindcss", "Git"],
+    imageUrl: "https://magicui.design/api/og",
+    url: "https://github.com/magicuidesign/magicui",
+  },
+  {
     title: "EsteQuiz : University Exam Platform",
     description: [
       "Developed a comprehensive exam platform .",
