@@ -65,27 +65,6 @@ export default function Home() {
           <Footer />
         </main>
         <div>
-          {/* <button
-            className="hover:-text-teal-300 absolute bottom-0 right-0 inline-flex items-center px-2 py-4 font-medium text-slate-400 hover:-translate-y-2 focus-visible:text-teal-300"
-            type="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-            aria-controls="radix-:R4l6:"
-            data-state="closed"
-          >
-            <span className="sr-only">Click to time travel</span>
-            <Image
-              src="/next.svg"
-              alt="Spotify Profile app homepage"
-              loading="lazy"
-              width="200"
-              height="48"
-              decoding="async"
-              data-nimg="1"
-              className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-              style={{ color: "transparent" }}
-            />
-          </button> */}
         </div>
       </div>
     </div>

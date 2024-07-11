@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 interface ExperienceProps extends Experience {}
 
 export default function Experience({
