@@ -7,7 +7,7 @@ export const projects: Project[] = [
       "Authored comprehensive installation documentation, improving the onboarding process for new users and developers.",
     ],
     technologies: ["React", "Next.js", "Schadcn", "Tailwindcss", "Git"],
-    imageUrl: "https://magicui.design/api/og",
+    imageUrl: "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469615/Portfolio-v2/magicui.jpg",
     url: "https://github.com/magicuidesign/magicui",
   },
   {
