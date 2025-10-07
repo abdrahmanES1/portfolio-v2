@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Abderrahman ES-SEBYITY's Portfolio",
   description:
-    "Explore Abderrahman ES-SEBYITY's portfolio showcasing web development projects and skills.",
+    "Explore Abderrahman ES-SEBYITY's portfolio showcasing software / data science projects and skills.",
   keywords:
-    "portfolio, web development, projects, frontend, backend, JavaScript, React, Next.js, HTML, CSS",
+    "portfolio, web development, projects, frontend, backend, JavaScript, React, Next.js, HTML, CSS, ML, AI, Data Science",
   authors: {
     name: "Abderrahman ES-SEBYITY",
     url: "https://www.linkedin.com/in/abderrahman-essebyity/",
@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   openGraph: {
     title: "Abderrahman ES-SEBYITY's Portfolio",
-    url: "abderrahman-essebyity.me",
+    url: "abderrahman-essebyity.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/abdrahmanes/image/upload/v1714471782/Portfolio-v2/Screen_Shot_2024-04-30_at_11.09.14_xzcep4.webp",
+        url: "https://res.cloudinary.com/abdrahmanes/image/upload/v1759856685/open_graph_portfolio.webp",
       },
     ],
     description:
