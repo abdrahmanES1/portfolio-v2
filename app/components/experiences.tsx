@@ -1,11 +1,19 @@
-import React from "react";
-import Experience from "./experience";
-
+import React, { useState } from "react";
+import ExperienceCard from "./experienceCard";
+import {  Category } from "@/constants";
+import type { Experience } from "@/types";
+import CategorySelector from "./category-selector";
 interface ExperiencesProps {
   experiences: Experience[];
 }
 
 function Experiences({ experiences }: ExperiencesProps) {
+  const [selectedCategory, setSelectedCategory] = useState<Category>("Software");
+
+  const filteredExperiences = experiences.filter(
+    (exp) => exp.category === selectedCategory
+  );
+
   return (
     <section
       id="experience"
@@ -15,18 +23,20 @@ function Experiences({ experiences }: ExperiencesProps) {
       <div className="sticky top-0 z-20 -mx-6 mb-5 w-screen    px-6 py-5 backdrop-blur md:-mx-12 md:px-12    lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 ">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200   ">
           Experience
+          <CategorySelector getCategory={setSelectedCategory} selectedCategory={selectedCategory}/>
         </h2>
       </div>
       <div>
         <ol className="group/list">
-          {experiences.map((exp, index) => (
-            <Experience key={index} {...exp} />
+        {filteredExperiences.length == 0? "No experiences to display.":null }
+          {filteredExperiences.map((exp, index) => (
+            <ExperienceCard key={index} {...exp} />
           ))}
         </ol>
         <div className="mt-12">
           <a
             className="inline-flex items-baseline leading-tight  hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
-            href="/resume.pdf"
+            href={`/resume-${selectedCategory}.pdf`}
             target="_blank"
             rel="noreferrer noopener"
             aria-label="View Full Résumé (opens in a new tab)"
@@ -34,7 +44,7 @@ function Experiences({ experiences }: ExperiencesProps) {
             <span>
               View Full{" "}
               <span className="inline-block">
-                Résumé
+                Résumé ({selectedCategory.split('_').join(' ')})
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"

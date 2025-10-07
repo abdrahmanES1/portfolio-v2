@@ -1,3 +1,5 @@
+import { Experience } from "@/types";
+
 export const experiences: Experience[] = [
   {
     period: "Apr 2024 - Present",
@@ -13,6 +15,7 @@ export const experiences: Experience[] = [
       "Tailwindcss",
       "Git",
     ],
+    category: "Software",
   },
   {
     period: "Nov 2022 – Dec 2022",
@@ -30,6 +33,8 @@ export const experiences: Experience[] = [
       "Bootstrap",
       "Git",
     ],
+
+    category: "Software",
   },
   {
     period: "Mar 2022",
@@ -41,5 +46,6 @@ export const experiences: Experience[] = [
       "Testing of achievements and correction of any anomalies.",
     ],
     technologies: ["JavaScript", "React", "Node.js", "MongoDB", "Jwt", "Git"],
+    category: "Software",
   },
 ];

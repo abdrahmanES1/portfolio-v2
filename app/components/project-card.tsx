@@ -1,7 +1,8 @@
+import { Project } from "@/types";
 import Image from "next/image";
 interface ProjectProps extends Project {}
 
-function Project({
+function ProjectCard({
   title,
   description,
   technologies,
@@ -78,4 +79,4 @@ function Project({
   );
 }
 
-export default Project;
+export default ProjectCard;

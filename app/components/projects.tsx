@@ -1,10 +1,19 @@
-import React from "react";
-import Project from "./project";
+import React, { useState } from "react";
+import { Project } from "@/types";
+import ProjectCard from "./project-card";
+import { Category } from "@/constants";
+import CategorySelector from "./category-selector";
 interface ProjectsProps {
   projects: Project[];
 }
 
 function Projects({ projects }: ProjectsProps) {
+  const [selectedCategory, setSelectedCategory] =
+    useState<Category>("Software");
+
+  const filteredProjects = projects.filter(
+    (pro) => pro.category === selectedCategory
+  );
   return (
     <section
       id="projects"
@@ -14,12 +23,17 @@ function Projects({ projects }: ProjectsProps) {
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen   px-6 py-5 backdrop-blur md:-mx-12 md:px-12  lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200   ">
           Projects
+          <CategorySelector
+            getCategory={setSelectedCategory}
+            selectedCategory={selectedCategory}
+          />
         </h2>
       </div>
       <div>
         <ol className="group/list">
-          {projects.map((project, index) => (
-            <Project key={index} {...project} />
+          {filteredProjects.length == 0 ? "No projects to display." : null}
+          {filteredProjects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
           ))}
         </ol>
         <ul className="group/list mt-2 flex flex-wrap">

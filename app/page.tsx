@@ -5,8 +5,8 @@ import About from "./components/about";
 const Experiences = lazy(() => import("./components/experiences"));
 const Projects = lazy(() => import("./components/projects"));
 const Footer = lazy(() => import("./components/footer"));
-import { experiences } from "@/app/data/experiences";
-import { projects } from "@/app/data/projects";
+import { experiences } from "@/app/data";
+import { projects } from "@/app/data";
 export default function Home() {
   useEffect(() => {
     const navLinks = document.querySelectorAll("nav ul li a");
