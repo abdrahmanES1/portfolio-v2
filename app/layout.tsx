@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       },
     ],
     description:
-      "Explore Abderrahman ES-SEBYITY's portfolio showcasing web development projects and skills.",
+      "Explore Abderrahman ES-SEBYITY's portfolio showcasing software / data science projects and skills.",
     locale: "en_US",
     siteName: "Abderrahman ES-SEBYITY's Portfolio",
   },
