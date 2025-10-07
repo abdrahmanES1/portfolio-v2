@@ -1,7 +1,8 @@
+import { Experience } from "@/types";
 import React from "react";
 interface ExperienceProps extends Experience {}
 
-export default function Experience({
+export default function ExperienceCard({
   period,
   position,
   place,

@@ -1,3 +1,5 @@
+import { Project } from "@/types";
+
 export const projects: Project[] = [
   {
     title: "Magic UI Magic UI, open source contribution",
@@ -7,8 +9,10 @@ export const projects: Project[] = [
       "Authored comprehensive installation documentation, improving the onboarding process for new users and developers.",
     ],
     technologies: ["React", "Next.js", "Schadcn", "Tailwindcss", "Git"],
-    imageUrl: "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469615/Portfolio-v2/magicui.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469615/Portfolio-v2/magicui.jpg",
     url: "https://github.com/magicuidesign/magicui",
+    category: "Software",
   },
   {
     title: "EsteQuiz : University Exam Platform",
@@ -31,6 +35,7 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469615/Portfolio-v2/EsteQuiz_q1xh17.webp",
 
     url: "https://quiz-este.vercel.app/",
+    category: "Software",
   },
   {
     title: "Express API Initializer : npm package",
@@ -40,6 +45,7 @@ export const projects: Project[] = [
     imageUrl:
       "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714471095/npm-icon_bb8deu.webp",
     url: "https://www.npmjs.com/package/express-api-initializer",
+    category: "Software",
   },
   {
     title: "E Student Rent",
@@ -59,5 +65,6 @@ export const projects: Project[] = [
     imageUrl:
       "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469320/Portfolio-v2/e-student-rent_alzywp.webp",
     url: "https://e-student-rent.vercel.app/",
+    category: "Software",
   },
 ];
