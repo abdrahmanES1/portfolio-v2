@@ -14,6 +14,8 @@ export const projects: Project[] = [
       "NumPy",
       "PIL",
       "Scikit-learn",
+      "Flask",
+      "Docker"
     ],
     imageUrl: "",
     url: "https://github.com/abdrahmanES1/Brain-Tumour-Detcetction-using-deep-learning",
@@ -27,8 +29,7 @@ export const projects: Project[] = [
       "Used pandas for data handling.",
     ],
     technologies: ["Scikit-learn", "Pandas", "KNN", "Streamlit"],
-    imageUrl: "",
-
+    imageUrl: "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1760030179/Portfolio-v2/movie_recommendation_sys.png",
     url: "https://github.com/abdrahmanES1/Movie-Recommender-System/blob/master/requirements.txt",
     category: "Data_Science",
   },
@@ -47,10 +48,12 @@ export const projects: Project[] = [
       "Exploratory Data Analysis",
       "Scikit-learn",
       "Pandas",
+      "FastAPI",
+      "Docker"
     ],
     imageUrl:
-      "",
-    url: "",
+      "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1760025675/Portfolio-v2/house_predection_project.png",
+    url: "https://github.com/abdrahmanES1/house_price_prediction",
     category: "Data_Science",
   },
   
