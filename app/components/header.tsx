@@ -12,16 +12,12 @@ function Header() {
           </a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Full-Stack Devloper | Junior Data Scientist
+          Full-Stack Developer | Data Scientist
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          Proven ability to develop and deploy full-stack applications
-
-          — and now applying those skills to build machine learning models for
-          real-world problems.
+          Building the bridge between robust software engineering and advanced data science.
           <br />
-          Expertise in API integration, cloud computing, and data-driven
-          development.
+          Expert in full-stack development, now applying deep learning and AI to solve real-world problems.
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
@@ -38,12 +34,34 @@ function Header() {
             </li>
             <li>
               <a
+                className="group flex items-center py-3 skills-link "
+                href="#skills"
+              >
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                  Skills
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
                 className="group flex items-center py-3 experience-link "
                 href="#experience"
               >
                 <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                 <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                   Experience
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="group flex items-center py-3 education-link "
+                href="#education"
+              >
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                  Education
                 </span>
               </a>
             </li>
