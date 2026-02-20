@@ -2,18 +2,43 @@ import { Experience } from "@/types";
 
 export const experiences: Experience[] = [
   {
-    period: "Apr 2024 - Present",
-    position: "Front-End Developer Intern",
-    place: "Integral Progress Technology.",
-    description:
-      "Developed web applications and contributed to backend services.",
+    period: "April 2024 – August 2024",
+    position: "Front-End Developer",
+    place: "Integral Progress Technology",
+    description: [
+      "Developed and integrated web pages for the Quality Management module in an ERP system using React, TypeScript, TailwindCSS, and Mantine.",
+      "Implemented API integrations to fetch and display dynamic data, improving functionality and user interaction.",
+      "Managed application state with Redux Toolkit and performed form validation using Yup and Formik."
+    ],
     technologies: [
-      "JavaScript",
-      "TypeScript",
       "React",
-      "Redux",
-      "Tailwindcss",
+      "TypeScript",
+      "Redux Toolkit",
+      "TailwindCSS",
+      "Mantine",
+      "Yup",
+      "Formik",
       "Git",
+    ],
+    category: "Software",
+  },
+  {
+    period: "January 2023 – September 2023",
+    position: "Software Developer",
+    place: "Freelance",
+    description: [
+      "Created desktop and web applications, delivering tailored solutions to clients.",
+      "Integrated the OpenAI API to automatically generate articles from keywords, enhancing content creation processes.",
+      "Deployed applications on cloud servers, configured production environments, and implemented online databases for scalability and performance.",
+      "Developed web scraping and automation scripts to streamline data extraction and repetitive tasks for clients."
+    ],
+    technologies: [
+      "Python",
+      "OpenAI API",
+      "Web Scraping",
+      "React",
+      "Node.js",
+      "Cloud Deployment"
     ],
     category: "Software",
   },

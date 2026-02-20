@@ -1,6 +1,6 @@
 import { Project } from "@/types";
 import Image from "next/image";
-interface ProjectProps extends Project {}
+interface ProjectProps extends Project { }
 
 function ProjectCard({
   title,
@@ -70,7 +70,7 @@ function ProjectCard({
           loading="lazy"
           width="200"
           height="48"
-          src={imageUrl}
+          src={imageUrl || "/project-placeholder.svg"}
           className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
           style={{ color: "transparent" }}
         />

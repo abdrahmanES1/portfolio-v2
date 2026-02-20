@@ -2,6 +2,25 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    title: "Automated Fact-Checking Pipeline via LLM Fine-Tuning",
+    description: [
+      "Engineered a synthetic training dataset via knowledge distillation (using Gemini 2.5 Pro) and fine-tuned the Mistral-Nemo 12B model using Unsloth (QLoRA) to achieve a 0.92 training loss.",
+      "Designed a RAG retrieval pipeline using LangChain and ChromaDB to ground the model’s outputs in verified data from Politifact and Snopes, ensuring zero hallucinations on extraction tasks."
+    ],
+    technologies: [
+      "Python",
+      "LLM Fine-Tuning",
+      "Unsloth (QLoRA)",
+      "LangChain",
+      "ChromaDB",
+      "Mistral-Nemo 12B",
+      "Gemini 2.5 Pro"
+    ],
+    imageUrl: "", // Placeholder or leave empty if no image available yet
+    url: "", // Add URL if available, otherwise can be empty or link to GitHub profile
+    category: "Data_Science",
+  },
+  {
     title: "Brain Tumor Detection Using Deep Learning",
     description: [
       "Built a classification model using VGG16 with transfer learning to identify four classes in MRI images: glioma, meningioma, pituitary, and no tumor.",
@@ -56,5 +75,5 @@ export const projects: Project[] = [
     url: "https://github.com/abdrahmanES1/house_price_prediction",
     category: "Data_Science",
   },
-  
+
 ];

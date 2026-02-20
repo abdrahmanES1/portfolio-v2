@@ -4,9 +4,10 @@ import Header from "./components/header";
 import About from "./components/about";
 const Experiences = lazy(() => import("./components/experiences"));
 const Projects = lazy(() => import("./components/projects"));
+const Skills = lazy(() => import("./components/skills"));
+const Education = lazy(() => import("./components/education"));
 const Footer = lazy(() => import("./components/footer"));
-import { experiences } from "@/app/data";
-import { projects } from "@/app/data";
+import { experiences, projects, skills, education } from "@/app/data";
 export default function Home() {
   useEffect(() => {
     const navLinks = document.querySelectorAll("nav ul li a");
@@ -60,7 +61,9 @@ export default function Home() {
         <Header />
         <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
           <About />
+          <Skills skills={skills} />
           <Experiences experiences={experiences} />
+          <Education education={education} />
           <Projects projects={projects} />
           <Footer />
         </main>

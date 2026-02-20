@@ -13,33 +13,29 @@ function About() {
         </h2>
       </div>
       <div>
-        <p className="mb-4 text-justify">
-          I am Abderrahman Essebyity, a Full-Stack Software Developer with a
-          growing focus on Data Science and Machine Learning.
-          <br /> With a solid background in developing and deploying full-stack
-          applications, I excel in API integration, cloud computing, and
-          building data-driven solutions.
-          <br />
-          I have extensive experience with technologies such as React, Next.js,
-          Node.js, Express.js, and Django, enabling me to build robust and
-          scalable web applications.
-          <br />
-          I’ve also developed machine learning models for real-world problems,
-
-          Currently pursuing my Master’s in Data Science & Analytics at Cadi
-          Ayyad University, I am seeking opportunities to apply my software
-          engineering discipline and emerging AI/ML skills to solve meaningful
-          challenges.
-          <br/>
-          Let’s connect — you can reach out to me anytime at
-          <a
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="mailto:abderrahman.essebyity@gmail.com"
-          >
-            {" "}
-            abderrahman.essebyity@gmail.com
-          </a>
-        </p>
+        <div className="text-left text-slate-400">
+          <p className="mb-4">
+            I am Abderrahman Essebyity, a <span className="font-medium text-slate-200">Full-Stack Software Developer</span> and <span className="font-medium text-slate-200">Data Science Master’s student</span>.
+          </p>
+          <p className="mb-4">
+            I specialize in solving complex problems across various domains, including predictive modeling, computer vision, and <span className="font-medium text-slate-200">Generative AI</span>.
+          </p>
+          <p className="mb-4">
+            My unique strength lies in bridging the gap between data science and web application deployment. I combine my solid background in full-stack engineering (<span className="font-medium text-slate-200">React, Next.js, Django, Node.js</span>) with emerging AI/ML skills (<span className="font-medium text-slate-200">PyTorch, TensorFlow, LLMs</span>) to build robust, data-driven solutions.
+          </p>
+          <p className="mb-8">
+            Currently pursuing my Master’s in Data Science & Analytics at Cadi Ayyad University, I am seeking opportunities to apply my engineering discipline and AI expertise to create meaningful impact.
+          </p>
+          <div className="group gap-2">
+            <span>Let’s connect — you can reach out to me anytime at </span>
+            <a
+              className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+              href="mailto:abderrahman.essebyity@gmail.com"
+            >
+              abderrahman.essebyity@gmail.com
+            </a>
+          </div>
+        </div>
         {/* <ul className="list-disc">
           <li>XHTML/HTML/HTML5, Templating Engine (Jade/Pug, etc.)</li>
           <li>
