@@ -11,8 +11,9 @@ export const skills: SkillCategory[] = [
     {
         title: "AI / ML",
         skills: [
-            "TensorFlow", "Keras", "PyTorch", "Scikit-learn", "Pandas", "NumPy",
-            "NLP (Spacy, Transformers)", "RAG", "LLM/SLM", "Deep Learning", "CNN"
+            "PyTorch", "TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy",
+            "LLM Fine-Tuning (QLoRA)", "RAG", "LLM/SLM", "Machine Learning",
+            "NLP (Spacy, Transformers)", "Computer Vision", "Deep Learning", "CNN", "Unsloth"
         ]
     },
     {

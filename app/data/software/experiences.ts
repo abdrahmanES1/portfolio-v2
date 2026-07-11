@@ -2,13 +2,15 @@ import { Experience } from "@/types";
 
 export const experiences: Experience[] = [
   {
-    period: "April 2024 – August 2024",
-    position: "Front-End Developer",
+    period: "April 2024 – September 2024",
+    position: "Frontend Developer",
     place: "Integral Progress Technology",
     description: [
-      "Developed and integrated web pages for the Quality Management module in an ERP system using React, TypeScript, TailwindCSS, and Mantine.",
-      "Implemented API integrations to fetch and display dynamic data, improving functionality and user interaction.",
-      "Managed application state with Redux Toolkit and performed form validation using Yup and Formik."
+      "Built dynamic pages for the Quality Management module of an ERP system using React, TypeScript, TailwindCSS, and Mantine.",
+      "Spearheaded the development of responsive web applications, enhancing performance and user experience.",
+      "Collaborated with cross-functional teams to translate complex requirements into maintainable code, reducing development time.",
+      "Integrated REST APIs to fetch and render dynamic data, and managed global state with Redux Toolkit.",
+      "Implemented reusable components and state management practices, improving code efficiency for future updates."
     ],
     technologies: [
       "React",
@@ -44,29 +46,30 @@ export const experiences: Experience[] = [
   },
   {
     period: "Nov 2022 – Dec 2022",
-    position: "Full-stack Developer Intern",
+    position: "Full-Stack Developer Intern",
     place: "FSJES MARRAKECH",
     description: [
-      "Creation of a web application that manages diploma requests and storage.",
-      "Admin panel manages degree status and student information, it helps to manage degree storage by providing unique number referencing degree location to users.",
+      "Built a full-stack web application that lets students track the status of their diploma requests in real time, using Django REST Framework for the backend and React on the front end.",
+      "Designed REST endpoints to expose diploma status and student records, with a unique-reference system so each diploma could be located by number.",
+      "Delivered a responsive React interface so students could check their diploma progress without contacting the administration."
     ],
     technologies: [
       "Python",
       "Django",
-      "Django REST framework",
-      "Jwt",
+      "Django REST Framework",
+      "React",
+      "JWT",
       "Bootstrap",
       "Git",
     ],
-
     category: "Software",
   },
   {
-    period: "Mar 2022",
+    period: "Mar 2022 – Apr 2022",
     position: "Web Developer Intern",
     place: "PIXELLEADS",
     description: [
-      "Design, development of a blog manager .",
+      "Designed and developed a comprehensive blog management system for streamlined content creation and categorization.",
       "Production, integration and deployment of the product to users.",
       "Testing of achievements and correction of any anomalies.",
     ],

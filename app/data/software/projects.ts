@@ -2,13 +2,13 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "Magic UI Magic UI, open source contribution",
+    title: "Magic UI — Open Source Contribution",
     description: [
       "Integrated new components, enhancing the functionality and usability of the Magic UI library.",
       "Developed and maintained a linting system to ensure code quality and consistency across the project.",
       "Authored comprehensive installation documentation, improving the onboarding process for new users and developers.",
     ],
-    technologies: ["React", "Next.js", "Schadcn", "Tailwindcss", "Git"],
+    technologies: ["React", "Next.js", "Shadcn", "Tailwind CSS", "Git"],
     imageUrl:
       "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469615/Portfolio-v2/magicui.jpg",
     url: "https://github.com/magicuidesign/magicui",
@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: "EsteQuiz : University Exam Platform",
     description: [
-      "Developed a comprehensive exam platform .",
+      "Developed a comprehensive exam platform.",
       "Designed with a user-friendly interface for seamless student experience.",
       "Empowered teachers with advanced administrative capabilities for efficient exam management.",
     ],
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "This web site helps you to find the right rent offer that meets your budget",
       "List your property in a few minutes and reach thousands of students every day.",
       "Get the best offers for students depending on your city or your university",
-      "Perhaps you're looking for somewhere close to your university or whatever you're looking for, we'll help you find it technologies",
+      "Perhaps you're looking for somewhere close to your university or whatever you're looking for, we'll help you find it.",
     ],
     technologies: [
       "React.js",
@@ -65,6 +65,24 @@ export const projects: Project[] = [
     imageUrl:
       "https://res.cloudinary.com/abdrahmanes/image/upload/c_fit,q_auto:eco,w_539/v1714469320/Portfolio-v2/e-student-rent_alzywp.webp",
     url: "https://e-student-rent.vercel.app/",
+    category: "Software",
+  },
+  {
+    title: "Find Your Pet",
+    description: [
+      "Designed and developed a platform that helps reunite lost or adoptable animals with their families.",
+      "Built with a full-stack architecture using React.js and Tailwind CSS on the frontend, Django REST Framework on the backend, and PostgreSQL for data storage."
+    ],
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Django",
+      "Django REST Framework",
+      "PostgreSQL",
+      "JWT"
+    ],
+    imageUrl: "",
+    url: "",
     category: "Software",
   },
 ];

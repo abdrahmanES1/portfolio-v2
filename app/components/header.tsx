@@ -12,12 +12,10 @@ function Header() {
           </a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Full-Stack Developer | Data Scientist
+          AI/ML & Full-Stack Engineer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          Building the bridge between robust software engineering and advanced data science.
-          <br />
-          Expert in full-stack development, now applying deep learning and AI to solve real-world problems.
+          Building intelligent, scalable applications — from LLM fine-tuning and RAG systems to production full-stack apps.
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">

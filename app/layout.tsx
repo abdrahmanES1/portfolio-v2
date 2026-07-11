@@ -7,16 +7,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://abderrahman-essebyity.vercel.app"),
   title: {
-    default: "Abderrahman ES-SEBYITY | Full-Stack Developer & Data Scientist",
+    default: "Abderrahman ES-SEBYITY | AI/ML & Full-Stack Engineer",
     template: "%s | Abderrahman ES-SEBYITY",
 
   },
   description:
-    "Portfolio of Abderrahman ES-SEBYITY, a Full-Stack Developer and Data Scientist specializing in React, Next.js, Python, Machine Learning, and Generative AI.",
+    "Portfolio of Abderrahman ES-SEBYITY, an AI/ML & Full-Stack Engineer specializing in LLM Fine-Tuning, RAG, Generative AI, Python, PyTorch, React, and FastAPI.",
   keywords: [
     "Abderrahman ES-SEBYITY",
-    "Full-Stack Developer",
-    "Data Scientist",
+    "AI/ML Engineer",
+    "Full-Stack Engineer",
     "Software Engineer",
     "React",
     "Next.js",
@@ -25,7 +25,10 @@ export const metadata: Metadata = {
     "Artificial Intelligence",
     "Generative AI",
     "LLM",
+    "LLM Fine-Tuning",
     "RAG",
+    "PyTorch",
+    "FastAPI",
     "Deep Learning",
     "Web Development",
     "Portfolio",
@@ -36,9 +39,9 @@ export const metadata: Metadata = {
   },
   creator: "Abderrahman ES-SEBYITY",
   openGraph: {
-    title: "Abderrahman ES-SEBYITY | Full-Stack Developer & Data Scientist",
+    title: "Abderrahman ES-SEBYITY | AI/ML & Full-Stack Engineer",
     description:
-      "Bridging the gap between robust software engineering and advanced data science. Explore my projects in Web Development and AI.",
+      "Building production AI systems — LLM fine-tuning, RAG, and Generative AI with full-stack engineering.",
     url: "https://abderrahman-essebyity.vercel.app",
     siteName: "Abderrahman ES-SEBYITY Portfolio",
     locale: "en_US",
@@ -57,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abderrahman ES-SEBYITY | Full-Stack Developer & Data Scientist",
+    title: "Abderrahman ES-SEBYITY | AI/ML & Full-Stack Engineer",
     description:
-      "Full-Stack Developer & Data Scientist. React, Next.js, Python, AI/ML.",
+      "AI/ML & Full-Stack Engineer. LLM Fine-Tuning, RAG, Python, PyTorch, React, FastAPI.",
     creator: "@abdrahmanES1", // Assuming existing handle or just name
     images: ["https://res.cloudinary.com/abdrahmanes/image/upload/v1759856685/open_graph_portfolio.webp"],
   },
@@ -101,13 +104,13 @@ export default function RootLayout({
               "@type": "Person",
               name: "Abderrahman ES-SEBYITY",
               url: "https://abderrahman-essebyity.vercel.app",
-              jobTitle: ["Full-Stack Developer", "Data Scientist"],
+              jobTitle: ["AI/ML Engineer", "Full-Stack Engineer"],
               sameAs: [
                 "https://www.linkedin.com/in/abderrahman-essebyity/",
                 "https://github.com/abdrahmanES1",
               ],
               description:
-                "Full-Stack Developer and Data Scientist specializing in React, Next.js, Python, and AI/ML.",
+                "AI/ML & Full-Stack Engineer specializing in LLM Fine-Tuning, RAG, Generative AI, Python, PyTorch, React, and FastAPI.",
             }),
           }}
         />
