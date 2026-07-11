@@ -36,27 +36,6 @@ function About() {
             </a>
           </div>
         </div>
-        {/* <ul className="list-disc">
-          <li>XHTML/HTML/HTML5, Templating Engine (Jade/Pug, etc.)</li>
-          <li>
-            CSS/CSS3 (incl. Grid, Flexbox), Bootstrap 3+, Tailwind CSS,
-            SASS/SCSS
-          </li>
-          <li>Responsive Design</li>
-          <li>JavaScript Core (incl. AJAX, JSON, OOP, ES6/7), TypeScript</li>
-          <li>React (incl. Router, Hooks, Redux/Thunk), Firebase</li>
-          <li>Git, GulpJs</li>
-          <li>Next.js</li>
-          <li>NodeJs, Express.js, Nest.js</li>
-          <li>MongoDB/mongoose</li>
-          <li>Django, Django Rest Framework</li>
-          <li>
-            Knowledge About API Integration with various CMS/Backend environment
-            context such as NodeJs/Strapi (Headless CMS)
-          </li>
-        </ul>
-        Email:{" "}
-         */}
       </div>
     </section>
   );

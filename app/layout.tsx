@@ -72,6 +72,9 @@ export const metadata: Metadata = {
     shortcut: ["/icons/apple-touch-icon.png"],
   },
   manifest: "/manifest.json",
+  alternates: {
+    canonical: "https://abderrahman-essebyity.vercel.app",
+  },
   robots: {
     index: true,
     follow: true,
@@ -92,7 +95,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <Analytics />
       <body
         className={`${inter.className} bg-sky-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900`}
       >
@@ -101,20 +103,85 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Abderrahman ES-SEBYITY",
-              url: "https://abderrahman-essebyity.vercel.app",
-              jobTitle: ["AI/ML Engineer", "Full-Stack Engineer"],
-              sameAs: [
-                "https://www.linkedin.com/in/abderrahman-essebyity/",
-                "https://github.com/abdrahmanES1",
+              "@graph": [
+                {
+                  "@type": "ProfilePage",
+                  dateCreated: "2024-04-01",
+                  dateModified: new Date().toISOString().split("T")[0],
+                  mainEntity: { "@id": "#person" },
+                },
+                {
+                  "@type": "Person",
+                  "@id": "#person",
+                  name: "Abderrahman ES-SEBYITY",
+                  url: "https://abderrahman-essebyity.vercel.app",
+                  email: "e.abdrahman2018@gmail.com",
+                  jobTitle: ["AI/ML Engineer", "Full-Stack Engineer"],
+                  description:
+                    "AI/ML & Full-Stack Engineer specializing in LLM Fine-Tuning (QLoRA), RAG pipelines, Generative AI, and full-stack web development with Python, PyTorch, React, Next.js, and FastAPI.",
+                  knowsAbout: [
+                    "Large Language Models",
+                    "LLM Fine-Tuning",
+                    "Retrieval-Augmented Generation",
+                    "Deep Learning",
+                    "Computer Vision",
+                    "Natural Language Processing",
+                    "React",
+                    "Next.js",
+                    "Python",
+                    "PyTorch",
+                    "FastAPI",
+                    "Node.js",
+                    "Full-Stack Development",
+                  ],
+                  alumniOf: [
+                    {
+                      "@type": "EducationalOrganization",
+                      name: "Université Cadi Ayyad",
+                      department: "Polydisciplinary Faculty of Safi",
+                    },
+                    {
+                      "@type": "EducationalOrganization",
+                      name: "Higher School of Technology of Essaouira",
+                    },
+                  ],
+                  hasCredential: [
+                    {
+                      "@type": "EducationalOccupationalCredential",
+                      name: "Master's in Data Science & Intelligent Systems",
+                      credentialCategory: "degree",
+                      recognizedBy: {
+                        "@type": "EducationalOrganization",
+                        name: "Université Cadi Ayyad",
+                      },
+                    },
+                    {
+                      "@type": "EducationalOccupationalCredential",
+                      name: "Meta Full-Stack Software Engineer Professional Certificate",
+                      credentialCategory: "certificate",
+                      recognizedBy: {
+                        "@type": "Organization",
+                        name: "Meta",
+                      },
+                    },
+                  ],
+                  sameAs: [
+                    "https://www.linkedin.com/in/abderrahman-essebyity/",
+                    "https://github.com/abdrahmanES1",
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  name: "Abderrahman ES-SEBYITY Portfolio",
+                  url: "https://abderrahman-essebyity.vercel.app",
+                  author: { "@id": "#person" },
+                },
               ],
-              description:
-                "AI/ML & Full-Stack Engineer specializing in LLM Fine-Tuning, RAG, Generative AI, Python, PyTorch, React, and FastAPI.",
             }),
           }}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );

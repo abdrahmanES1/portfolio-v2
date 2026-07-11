@@ -20,7 +20,7 @@ function ProjectCard({
               href={url}
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="Build a Spotify Connected App (opens in a new tab)"
+              aria-label={`${title} (opens in a new tab)`}
             >
               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>
@@ -66,7 +66,7 @@ function ProjectCard({
           </ul>
         </div>
         <Image
-          alt="Build a Spotify Connected App Newline course marketing card"
+          alt={`${title} project thumbnail`}
           loading="lazy"
           width="200"
           height="48"
