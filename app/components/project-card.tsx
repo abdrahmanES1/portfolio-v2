@@ -48,7 +48,7 @@ function ProjectCard({
             {typeof description == "string" ? (
               description
             ) : (
-              <ul className="">
+              <ul className="list-disc pl-5 space-y-1">
                 {description?.map((line: string, index: number) => (
                   <li key={index}>{line}</li>
                 ))}

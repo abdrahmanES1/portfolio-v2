@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Abderrahman ES-SEBYITY} \\[3pt]
+  {\normalsize AI/ML Engineer} \\[3pt]
+  {\small
+  \href{mailto:e.abdrahman2018@gmail.com}{e.abdrahman2018@gmail.com} $\vert$
+  \href{https://linkedin.com/in/abderrahman-essebyity}{linkedin.com/in/abderrahman-essebyity} $\vert$
+  \href{https://github.com/abdrahmanES1}{github.com/abdrahmanES1} $\vert$
+  \href{https://abderrahman-essebyity.vercel.app}{abderrahman-essebyity.vercel.app}}
+\end{center}
+
+\section{Summary}
+{\small AI/ML Engineer with hands-on experience building production RAG pipelines, fine-tuning LLMs, and deploying deep learning models. Strong full-stack background (React, Django, FastAPI). Master's thesis outperformed six published RAG baselines on multilingual benchmarks.}
+
+\section{Technical Skills}
+{\small
+\textbf{AI/ML:} PyTorch, TensorFlow, Keras, Scikit-learn, LLM Fine-Tuning (QLoRA), RAG, LangChain, NLP (SpaCy, Transformers), Computer Vision, Deep Learning, CNN \\
+\textbf{Languages:} Python, JavaScript, TypeScript, Java \quad
+\textbf{Data:} Pandas, NumPy, ChromaDB, MongoDB, PostgreSQL \\
+\textbf{Frameworks:} FastAPI, Django, Flask, React, Next.js, Node.js, Express.js \quad
+\textbf{Tools:} Git, Docker, Hugging Face, Unsloth}
+
+\section{Experience}
+
+{\small
+\textbf{AI/ML Engineer --- Master's Thesis} \hfill Feb 2026 -- Jun 2026 \\
+\textit{Universit\'{e} Cadi Ayyad}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small Designed an agentic RAG system answering Moroccan public-service questions in four languages (MSA, Darija, Arabizi, French), running locally on a single GPU with a 4B open-weights generator.}
+  \item {\small Architected an 11-stage pipeline: hybrid retrieval (BM25 + BGE-M3 with RRF), cross-encoder reranking, LLM router, and plan-execute-reflect-synthesise agent loop with five deterministic tools.}
+  \item {\small Built NLI verification scoring claims against evidence with per-claim citations, reducing hallucination.}
+  \item {\small Outperformed six published baselines: 0.66 multi-hop success, 0.289 Arabizi F1 (next-best 0.034).}
+\end{itemize}
+
+\vspace{2pt}
+{\small
+\textbf{Frontend Developer} \hfill Apr 2024 -- Sep 2024 \\
+\textit{Integral Progress Technology}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small Built dynamic pages for an ERP Quality Management module using React, TypeScript, TailwindCSS, and Mantine.}
+  \item {\small Integrated REST APIs and managed global state with Redux Toolkit; built reusable component library.}
+\end{itemize}
+
+\vspace{2pt}
+{\small
+\textbf{Freelance Developer} \hfill Jan 2023 -- Sep 2023 \\
+\textit{Freelance}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small Integrated the OpenAI API to auto-generate articles from keywords; deployed apps on cloud servers.}
+  \item {\small Developed web scraping and automation scripts to streamline data extraction for clients.}
+\end{itemize}
+
+\vspace{2pt}
+{\small
+\textbf{Full-Stack Developer} \hfill Nov 2022 -- Dec 2022 \\
+\textit{FSJES Marrakech}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small Built a diploma-tracking web app with Django REST Framework and React, serving real-time status updates.}
+\end{itemize}
+
+\section{Projects}
+
+{\small
+\textbf{Agentic Multilingual RAG System} --- \textit{Python, PyTorch, LangChain, ChromaDB, QLoRA, FastAPI}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small 11-stage RAG with hybrid retrieval, NLI claim verification; fine-tuned Mistral-Nemo 12B via QLoRA/Unsloth.}
+\end{itemize}
+
+\vspace{2pt}
+{\small
+\textbf{Automated Fact-Checking Pipeline} --- \textit{Python, PyTorch, QLoRA, LangChain, ChromaDB, Unsloth}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small Fine-tuned Mistral-Nemo 12B SLM matching 91\% of Gemini 2.5 Pro quality at 7x lower cost; RAG with verified sources.}
+\end{itemize}
+
+\vspace{2pt}
+{\small
+\textbf{Distributed Multi-Agent Anomaly Detection} --- \textit{Python, XMPP, River, Streamlit}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small 20+ autonomous agents with online ML (HalfSpaceTrees), trust-based consensus in <200ms, 30\% node-loss tolerance.}
+\end{itemize}
+
+\vspace{2pt}
+{\small
+\textbf{Brain Tumor Classification} --- \textit{Python, TensorFlow, Keras, Flask, Docker}}
+\begin{itemize}[leftmargin=12pt]
+  \item {\small CNN using VGG16 transfer learning to classify MRI scans into four tumor categories.}
+\end{itemize}
+
+\section{Education}
+
+{\small
+\textbf{Master's in Data Science and Analytics} \hfill Oct 2024 -- Jul 2026 \\
+\textit{Universit\'{e} Cadi Ayyad --- Polydisciplinary Faculty of Safi} \\[4pt]
+\textbf{Bachelor's in Computer Software Engineering} \hfill Oct 2023 -- Jun 2024 \\
+\textit{Higher School of Technology of Essaouira --- Cadi Ayyad University} \\[4pt]
+\textbf{Meta Full-Stack Engineer Professional Certificate} \hfill Apr 2023 \\
+\textit{Meta --- Coursera}}
+
+\end{document}

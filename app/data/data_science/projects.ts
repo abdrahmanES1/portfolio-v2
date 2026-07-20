@@ -2,6 +2,49 @@ import { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    title: "Automated Fact-Checking Pipeline via LLM Fine-Tuning & RAG",
+    description: [
+      "Architected a robust fact-checking system combining Fine-Tuned SLMs (Small Language Models) with Retrieval-Augmented Generation (RAG).",
+      "Fine-tuned the Mistral Nemo 12B model using Unsloth (QLoRA) to optimize computational efficiency, achieving a training loss of 0.92.",
+      "Engineered a high-quality synthetic training dataset via Knowledge Distillation, utilizing Gemini 2.5 Pro to generate reasoning traces for claim verification.",
+      "Deployed a retrieval pipeline using LangChain and ChromaDB to ground model outputs in verified sources (PolitiFact, Snopes), successfully mitigating hallucinations in claim extraction and verification tasks."
+    ],
+    technologies: [
+      "Python",
+      "PyTorch",
+      "RAG",
+      "LangChain",
+      "ChromaDB",
+      "QLoRA",
+      "Unsloth",
+      "FastAPI"
+    ],
+    imageUrl: "",
+    url: "https://github.com/abdrahmanES1/fact-checking-slm",
+    category: "Data_Science",
+  },
+  {
+    title: "Distributed Multi-Agent Anomaly Detection System",
+    description: [
+      "Built a fault-tolerant multi-agent system that detects anomalies in distributed sensor networks, with 20+ autonomous agents coordinating over XMPP messaging.",
+      "Implemented online (streaming) machine learning with River’s HalfSpaceTrees, so agents learn incrementally and adapt to concept drift without batch retraining.",
+      "Designed a self-healing network topology: agents exchange heartbeats, automatically prune unresponsive peers, and maintain trust/reputation scores to isolate unreliable nodes.",
+      "Added trust-based consensus so agents collaboratively validate anomalies and cut false positives, reaching agreement in under 200ms.",
+      "Built a Streamlit ‘War Room’ dashboard for live topology visualization, fleet health, and chaos-engineering tests — maintaining full operation under 30% node loss."
+    ],
+    technologies: [
+      "Python",
+      "Multi-agent Systems",
+      "XMPP",
+      "River",
+      "HalfSpaceTrees",
+      "Streamlit"
+    ],
+    imageUrl: "",
+    url: "https://github.com/abdrahmanES1/Distributed-Anomaly-Detection-MAS",
+    category: "Data_Science",
+  },
+  {
     title: "Agentic Multilingual RAG — Master’s Thesis",
     description: [
       "Architected an 11-stage agentic RAG system answering Moroccan public-service questions in four languages (MSA, Darija, Arabizi, French), running locally on a single consumer GPU with a 4B open-weights generator.",

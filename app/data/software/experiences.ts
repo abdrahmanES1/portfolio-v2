@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
   },
   {
     period: "January 2023 – September 2023",
-    position: "Software Developer",
+    position: "Freelance Developer",
     place: "Freelance",
     description: [
       "Created desktop and web applications, delivering tailored solutions to clients.",
@@ -46,8 +46,8 @@ export const experiences: Experience[] = [
   },
   {
     period: "Nov 2022 – Dec 2022",
-    position: "Full-Stack Developer Intern",
-    place: "FSJES MARRAKECH",
+    position: "Full-Stack Developer",
+    place: "FSJES Marrakech",
     description: [
       "Built a full-stack web application that lets students track the status of their diploma requests in real time, using Django REST Framework for the backend and React on the front end.",
       "Designed REST endpoints to expose diploma status and student records, with a unique-reference system so each diploma could be located by number.",

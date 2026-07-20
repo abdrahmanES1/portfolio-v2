@@ -15,16 +15,16 @@ function About() {
       <div>
         <div className="text-left text-slate-400">
           <p className="mb-4">
-            I build machine-learning systems end-to-end — from model design to production deployment — and I ship the full stack around them.
+            I build machine-learning systems end-to-end, from model design to production deployment, and I ship the full stack around them.
           </p>
           <p className="mb-4">
-            My master’s thesis: an <span className="font-medium text-slate-200">agentic RAG system</span> answering questions about Moroccan public services in four languages, running locally on a single GPU. It beat six published baselines on multi-hop and multilingual metrics.
+            My work spans <span className="font-medium text-slate-200">LLM fine-tuning</span>, <span className="font-medium text-slate-200">retrieval-augmented generation</span>, <span className="font-medium text-slate-200">multi-agent systems</span>, and <span className="font-medium text-slate-200">deep learning</span> for computer vision and NLP. I focus on building systems that work in production: low-latency, multilingual, and grounded in real data.
           </p>
           <p className="mb-4">
-            I combine a solid background in full-stack engineering (<span className="font-medium text-slate-200">React, Next.js, Django, FastAPI</span>) with deep AI/ML expertise (<span className="font-medium text-slate-200">PyTorch, LLM Fine-Tuning, RAG, Generative AI</span>) to build production-ready, data-driven applications.
+            On the engineering side, I&apos;ve shipped production web apps, published an npm package, and contributed to <span className="font-medium text-slate-200">Magic UI</span> (21.5k★ open-source library). I combine a strong full-stack background in <span className="font-medium text-slate-200">React, Next.js, Django, and FastAPI</span> with deep AI/ML expertise.
           </p>
           <p className="mb-8">
-            Master’s graduate in Data Science & Analytics from Cadi Ayyad University, seeking opportunities to apply my engineering discipline and AI expertise to create meaningful impact.
+            I&apos;m open to AI/ML Engineer and Full-Stack roles, remote or based in Morocco. If you&apos;re working on something in applied AI, NLP, or production ML, I&apos;d be glad to talk.
           </p>
           <div className="group gap-2">
             <span>Let’s connect — you can reach out to me anytime at </span>
