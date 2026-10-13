@@ -16,5 +16,6 @@ interface Project {
   technologies: string[];
   imageUrl: string;
   url: string;
+  collaborators?: string[];
   category: ExperienceCategory
 } 

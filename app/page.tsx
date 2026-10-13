@@ -1,56 +1,22 @@
-"use client";
-import { lazy, useEffect } from "react";
+import React from "react";
 import Header from "./components/header";
 import About from "./components/about";
-const Experiences = lazy(() => import("./components/experiences"));
-const Projects = lazy(() => import("./components/projects"));
-const Skills = lazy(() => import("./components/skills"));
-const Education = lazy(() => import("./components/education"));
-const Footer = lazy(() => import("./components/footer"));
+import Experiences from "./components/experiences";
+import Projects from "./components/projects";
+import Skills from "./components/skills";
+import Education from "./components/education";
+import Footer from "./components/footer";
+import Writings from "./components/writings";
+import ScrollSpy from "./components/scroll-spy";
 import { experiences, projects, skills, education } from "@/app/data";
-export default function Home() {
-  useEffect(() => {
-    const navLinks = document.querySelectorAll("nav ul li a");
+import { getAllPosts } from "@/lib/blog";
 
-    // Function to highlight the active link
-    function highlightNavLink() {
-      // Get current scroll position
-      const scrollPosition = window.scrollY;
+export default async function Home() {
+  const posts = await getAllPosts();
 
-      // Loop through each section
-      document.querySelectorAll("section").forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        // Check if the current scroll position is within this section
-        if (
-          scrollPosition >= sectionTop &&
-          scrollPosition < sectionTop + sectionHeight
-        ) {
-          // Remove 'active' class from all links
-          navLinks.forEach((link) => {
-            link.classList.remove("active");
-          });
-
-          // Add 'active' class to the corresponding link
-          const correspondingLink = document.querySelector(
-            `nav ul li a[href="#${section.id}"]`
-          );
-          if (correspondingLink) {
-            correspondingLink.classList.add("active");
-          }
-        }
-      });
-    }
-
-    // Attach scroll event listener
-    window.addEventListener("scroll", highlightNavLink);
-    return () => {
-      window.removeEventListener("scroll", highlightNavLink);
-    };
-  }, []);
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+      <ScrollSpy />
       <a
         href="#content"
         className="absolute left-0 top-0 block -translate-x-full rounded bg-gradient-to-br from-teal-400 via-blue-500 to-purple-600 px-4 py-3 text-sm font-bold uppercase tracking-widest text-white focus-visible:translate-x-0"
@@ -65,6 +31,7 @@ export default function Home() {
           <Experiences experiences={experiences} />
           <Education education={education} />
           <Projects projects={projects} />
+          <Writings posts={posts} />
           <Footer />
         </main>
         <div>

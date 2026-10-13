@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: "EsteQuiz : University Exam Platform",
     description: [
-      "Developed a comprehensive exam platform .",
+      "Developed a comprehensive exam platform.",
       "Designed with a user-friendly interface for seamless student experience.",
       "Empowered teachers with advanced administrative capabilities for efficient exam management.",
     ],
