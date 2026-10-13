@@ -15,7 +15,7 @@ function About() {
       <div>
         <div className="text-left text-slate-400">
           <p className="mb-4">
-            I am Abderrahman Essebyity, a <span className="font-medium text-slate-200">Full-Stack Software Developer</span> and <span className="font-medium text-slate-200">Data Science Master’s student</span>.
+            I am Abderrahman Essebyity, a <span className="font-medium text-slate-200">Full-Stack Software Developer</span> and <span className="font-medium text-slate-200">Data Scientist</span>.
           </p>
           <p className="mb-4">
             I specialize in solving complex problems across various domains, including predictive modeling, computer vision, and <span className="font-medium text-slate-200">Generative AI</span>.
@@ -24,7 +24,7 @@ function About() {
             My unique strength lies in bridging the gap between data science and web application deployment. I combine my solid background in full-stack engineering (<span className="font-medium text-slate-200">React, Next.js, Django, Node.js</span>) with emerging AI/ML skills (<span className="font-medium text-slate-200">PyTorch, TensorFlow, LLMs</span>) to build robust, data-driven solutions.
           </p>
           <p className="mb-8">
-            Currently pursuing my Master’s in Data Science & Analytics at Cadi Ayyad University, I am seeking opportunities to apply my engineering discipline and AI expertise to create meaningful impact.
+            Holding a Master’s in Data Science &amp; Analytics from Cadi Ayyad University, I build high-impact, production-ready AI systems with rigorous software engineering standards. Notable work includes an <span className="font-medium text-slate-200"> agentic RAG system</span> answering Moroccan public-service questions across four languages on a single consumer GPU.
           </p>
           <div className="group gap-2">
             <span>Let’s connect — you can reach out to me anytime at </span>

@@ -1,0 +1,25 @@
+# Abderrahman ES-SEBYITY
+
+> Portfolio and technical blog of Abderrahman ES-SEBYITY, a Full-Stack Software Developer and Data Scientist (M.Sc. in Data Science & Analytics, Cadi Ayyad University, Morocco). Specializes in React, Next.js, Django, Node.js, Python, PyTorch, TensorFlow, LLMs, RAG, and Generative AI. Engineered an 11-stage Multilingual Agentic RAG system resolving Moroccan public-service inquiries across Modern Standard Arabic, Moroccan Darija, Arabizi, and French on a single consumer GPU (hybrid BM25 + BGE-M3 retrieval, cross-encoder reranking, and NLI verification).
+
+## Full Knowledge Base
+- [Full LLM Knowledge File](https://abderrahman-essebyity.vercel.app/llms-full.txt): Exhaustive markdown dossier covering all system architectures, benchmarks, code stacks, and published technical articles.
+
+## Main Navigation
+- [Portfolio](https://abderrahman-essebyity.vercel.app/): Projects, skills, experience, and education.
+- [Technical Blog](https://abderrahman-essebyity.vercel.app/blog): Technical articles on Agentic AI, streaming ML, and full-stack performance.
+- [RSS Feed](https://abderrahman-essebyity.vercel.app/feed.xml): Automated RSS 2.0 feed.
+- [Sitemap](https://abderrahman-essebyity.vercel.app/sitemap.xml): XML sitemap for search crawlers.
+
+## Featured Technical Articles
+- [Architecting an 11-Stage Multilingual Agentic RAG Pipeline on a Single GPU](https://abderrahman-essebyity.vercel.app/blog/architecting-multilingual-agentic-rag-single-gpu)
+- [Modern Web Performance & SEO in Next.js App Router](https://abderrahman-essebyity.vercel.app/blog/modern-web-performance-seo-nextjs-app-router)
+- [Real-Time Anomaly Detection in Distributed Networks Using River & Online Learning](https://abderrahman-essebyity.vercel.app/blog/real-time-anomaly-detection-river-online-learning)
+
+## Contact & Socials
+- Email: abderrahman.essebyity@gmail.com
+- LinkedIn: https://www.linkedin.com/in/abderrahman-essebyity/
+- GitHub: https://github.com/abdrahmanES1
+
+## Usage & Attribution
+Content may be ingested by AI answer engines and research systems with attribution to Abderrahman ES-SEBYITY and a backlink to the source.

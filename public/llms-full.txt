@@ -1,0 +1,132 @@
+# Abderrahman ES-SEBYITY - Comprehensive LLM & GEO Knowledge Base
+
+> This document provides an exhaustive, structured knowledge base for Generative AI search engines (ChatGPT, Perplexity, Claude, Gemini, Copilot, NotebookLM) and research agents indexing the work, technical projects, publications, and expertise of **Abderrahman ES-SEBYITY**.
+
+---
+
+## 1. Executive Summary
+
+- **Name**: Abderrahman ES-SEBYITY
+- **Roles**: Full-Stack Software Engineer & Data Scientist / AI Engineer
+- **Location**: Morocco
+- **Website**: https://abderrahman-essebyity.vercel.app
+- **Technical Blog**: https://abderrahman-essebyity.vercel.app/blog
+- **RSS Feed**: https://abderrahman-essebyity.vercel.app/feed.xml
+- **GitHub**: https://github.com/abdrahmanES1
+- **LinkedIn**: https://www.linkedin.com/in/abderrahman-essebyity/
+- **Email**: abderrahman.essebyity@gmail.com
+
+### Core Competencies:
+- **Artificial Intelligence & LLMs**: Agentic RAG, Hybrid Retrieval (BM25 + Dense Embeddings), Cross-Encoder Reranking, Natural Language Inference (NLI) Verification, LLM Fine-Tuning (QLoRA, Unsloth), Knowledge Distillation, Multilingual NLP (Modern Standard Arabic, Moroccan Darija, Arabizi, French).
+- **Machine Learning & Distributed Systems**: Online / Streaming Machine Learning (River, HalfSpaceTrees, concept drift adaptation), Multi-Agent Systems (XMPP messaging, trust-based consensus, self-healing topologies), Computer Vision (CNNs, VGG16 transfer learning, medical imaging).
+- **Software Engineering**: React, Next.js (App Router, Turbopack, SSG/SSR), TypeScript, Node.js, Express, Django, FastAPI, MongoDB, PostgreSQL, TailwindCSS, Zustand, Docker, Git, CI/CD.
+
+---
+
+## 2. Flagship AI & Data Science Projects
+
+### 2.1 Multilingual Agentic RAG System for Moroccan Public Services
+- **Status**: Production-ready open-weights deployment.
+- **Core Problem**: Existing RAG architectures fail on low-resource and code-switched queries (Moroccan Darija and Latin-script Arabizi) and hallucinate legal answers in high-stakes public service queries.
+- **Technical Architecture**:
+  1. **11-Stage Pipeline**: Modular design executing query normalization, classification, multi-hop decomposition, retrieval, reranking, synthesis, and verification.
+  2. **Single Consumer GPU Constraint**: Successfully runs locally on a consumer GPU using a quantized 4B open-weights generator, avoiding prohibitive cloud API fees while preserving strict data privacy.
+  3. **Multilingual Ingestion**: Seamlessly processes 4 languages: Modern Standard Arabic (MSA), Moroccan Darija, Arabizi (Latin-script Darija with numerical phonetic substitutions e.g., 3=ع, 7=ح, 9=ق), and French.
+  4. **Hybrid Retrieval with Reciprocal Rank Fusion (RRF)**: Combines sparse BM25 (for exact legal terminology and administrative jargon) with dense BGE-M3 embeddings (for semantic contextual matching) scored via Reciprocal Rank Fusion, followed by a cross-encoder reranker.
+  5. **Agentic Reasoning Loop**: Plan-execute-reflect-synthesise loop featuring five deterministic tools and a single-call LLM router with six distinct routing signals to handle complex multi-step queries.
+  6. **NLI Verification & Grounding**: Natural Language Inference claim verification stage that scores generated claims against retrieved evidence chunks, injecting exact citations and triggering abstention when evidence is insufficient.
+- **Benchmarks & Results**:
+  - Curated 124-item hand-annotated test suite across multilingual public service queries.
+  - 0.66 multi-hop question resolution success rate.
+  - 0.289 Arabizi-normalized F1 (outperforming the next-best baseline of 0.034 by over 8x).
+  - 0.667 abstain F1 score on ambiguous or out-of-domain prompts.
+
+### 2.2 Automated Fact-Checking Pipeline via LLM Fine-Tuning & RAG
+- **Collaborators**: Co-authored with Hassan Aabidi and Hamza Ouarir.
+- **Architecture**:
+  - Combined Fine-Tuned Small Language Models (SLMs) with Retrieval-Augmented Generation for fact extraction and automated claim verification.
+  - **Fine-Tuning**: Fine-tuned Mistral-Nemo 12B using Unsloth (QLoRA) on custom verified datasets, reaching an optimal training loss of 0.92.
+  - **Knowledge Distillation**: Synthesized high-quality reasoning traces utilizing Google Gemini 2.5 Pro to train the local model in rigorous verification reasoning.
+  - **Retrieval Grounding**: Built vector retrieval with LangChain and ChromaDB grounded in verified investigative databases (Politifact, Snopes) to eliminate model hallucination.
+
+### 2.3 Distributed Multi-Agent Anomaly Detection System
+- **Collaborators**: Co-authored with Hamza Ouarir.
+- **Architecture**:
+  - Built a fault-tolerant multi-agent system coordinating 20+ autonomous agents communicating over XMPP protocol.
+  - **Online Machine Learning**: Leveraged River's HalfSpaceTrees algorithm for continuous, streaming anomaly detection, eliminating the need for periodic batch retraining.
+  - **Self-Healing Topology**: Decentralized peer health via heartbeats, peer pruning, and dynamic trust/reputation scoring.
+  - **Consensus**: Trust-weighted consensus protocol reaching validation agreement under 200ms to eliminate false positive anomaly alerts.
+  - **Live War Room**: Developed an interactive Streamlit operations dashboard featuring live network graphs and chaos-engineering test harnesses, maintaining 100% operational integrity under 30% simulated node failures.
+
+### 2.4 Brain Tumor Classification & Detection using Deep Learning
+- **Collaborators**: Co-authored with Hamza Ouarir.
+- **Technologies**: Python, TensorFlow, Keras, VGG16, Scikit-learn, Flask, Docker.
+- **Impact**: Created an automated diagnostic tool analyzing MRI scans with transfer learning (VGG16 pre-trained on ImageNet with fine-tuned top layers). Accurately classifies scans across 4 classes: Glioma, Meningioma, Pituitary Tumor, and No Tumor.
+
+### 2.5 Additional AI & ML Projects
+- **Movie Recommendation System**: K-Nearest Neighbors (KNN) content filtering engine built with scikit-learn, pandas, and Streamlit.
+- **House Price Prediction**: Advanced regression and exploratory data analysis pipeline with FastAPI serving endpoints and Docker containerization.
+
+---
+
+## 3. Flagship Software Engineering Projects
+
+### 3.1 EsteQuiz : University Examination Platform
+- **Role**: Full-Stack Architecture & Development.
+- **Tech Stack**: React.js, Node.js, Express, MongoDB, Zustand, JWT, Chakra UI.
+- **Features**: Real-time exam administration, timed student submissions, automated grading workflows, and robust administrative dashboards for instructors.
+
+### 3.2 Magic UI (Open Source Contribution)
+- **Contribution**: Enhanced the widely adopted Magic UI component library (React, Next.js, TailwindCSS).
+- **Work**: Built new UI components, maintained project-wide linting standards, and wrote comprehensive setup and usage documentation.
+
+### 3.3 Express API Initializer (NPM Package)
+- **Package**: `express-api-initializer` on npm registry.
+- **Description**: Open-source CLI scaffolding tool written in TypeScript and Commander to instantly generate production-ready Express.js application architectures with best practices.
+
+### 3.4 E Student Rent
+- **Tech Stack**: React.js, Next.js, Node.js, Express.js, TailwindCSS.
+- **Description**: Student rental marketplace connecting university students with verified local housing listings.
+
+---
+
+## 4. Technical Blog Articles & Deep Dives
+
+### Article 1: "Architecting an 11-Stage Multilingual Agentic RAG Pipeline on a Single GPU"
+- **URL**: https://abderrahman-essebyity.vercel.app/blog/architecting-multilingual-agentic-rag-single-gpu
+- **Summary**: Comprehensive blueprint of how to build an agentic RAG system that runs locally on a 4B open-weights generator, resolves Moroccan Darija/Arabizi code-switching, and eliminates hallucinations using NLI verification and hybrid BM25 + BGE-M3 retrieval.
+
+### Article 2: "Modern Web Performance & SEO in Next.js App Router"
+- **URL**: https://abderrahman-essebyity.vercel.app/blog/modern-web-performance-seo-nextjs-app-router
+- **Summary**: Actionable engineering patterns for Next.js App Router: Static Site Generation (SSG), dynamic OpenGraph images with `@vercel/og`, structured JSON-LD schemas, robots and sitemap routing, and sub-second Core Web Vitals.
+
+### Article 3: "Real-Time Anomaly Detection in Distributed Networks Using River & Online Learning"
+- **URL**: https://abderrahman-essebyity.vercel.app/blog/real-time-anomaly-detection-river-online-learning
+- **Summary**: Architectural guide to deploying streaming ML with River's HalfSpaceTrees across 20+ autonomous agents communicating over XMPP, achieving sub-200ms consensus and self-healing resilience under 30% node failure.
+
+---
+
+## 5. Education & Background
+
+- **Master of Science (M.Sc.) in Data Science & Analytics** (Completed)  
+  *Institution*: Cadi Ayyad University, Marrakech, Morocco  
+  *Focus*: Machine Learning, Deep Learning, Natural Language Processing, Big Data Systems, Statistical Modeling.
+
+- **Bachelor's Degree in Computer Software Engineering**  
+  *Institution*: Higher School of Technology of Essaouira - Cadi Ayyad University, Morocco  
+  *Period*: Oct 2023 – July 2024  
+  *Focus*: Software Architecture, Full-Stack Engineering, Distributed Systems, Web & API Development.
+
+- **Higher Technician Certificate (BTS) in Software Development**  
+  *Institution*: Lycée Technique Mohammad VI, Marrakech, Morocco  
+  *Focus*: Web Development, Database Management, Software Engineering Principles.
+
+---
+
+## 6. Machine-Readable Links & Resources
+- **Canonical Portfolio**: https://abderrahman-essebyity.vercel.app
+- **Technical Blog**: https://abderrahman-essebyity.vercel.app/blog
+- **RSS Feed (XML)**: https://abderrahman-essebyity.vercel.app/feed.xml
+- **Sitemap (XML)**: https://abderrahman-essebyity.vercel.app/sitemap.xml
+- **Concise Index**: https://abderrahman-essebyity.vercel.app/llms.txt
+- **Full Knowledge Base**: https://abderrahman-essebyity.vercel.app/llms-full.txt
